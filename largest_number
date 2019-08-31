@@ -1,0 +1,27 @@
+int        max(int* tab, unsigned int len)
+{
+   printf("%d", tab[4]);
+   int x;
+   int largest;
+   
+   x = 0;
+   largest = 0;
+   while (x < len)
+    {
+      if (tab[x] >= largest)
+      {
+        largest = tab[x];
+      }
+      x++;
+    }  
+    printf("%d", largest);
+  return (largest);
+}
+int   main()
+{
+  int iArr[5] = {1, 5, 4, 2, 9};
+  printf("%d", iArr[1]);
+  max(iArr, 5);
+  
+  return (0);
+}
